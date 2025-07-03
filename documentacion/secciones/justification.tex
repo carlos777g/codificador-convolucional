@@ -1,0 +1,22 @@
+\section{Justification}
+
+\vspace{0.3cm}
+\textbf{6. Output and Transmission}
+\begin{lstlisting}
+  Serial.print("m: ");
+  Serial.print(m, BIN);
+  Serial.print(" | c: ");
+  Serial.print(c, BIN);
+  if (hayError) Serial.print(" <-- simulated error");
+  Serial.println();
+
+  Serial1.write(c);       // Send encoded data
+  delay(200);             // Short delay between transmissions
+}
+\end{lstlisting}
+
+Esta investigación cuantitativa se propone resolver la siguiente pregunta:
+\begin{quotation}
+  \textit{\\Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos. }
+\end{quotation}
+

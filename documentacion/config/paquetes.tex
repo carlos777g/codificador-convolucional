@@ -1,0 +1,71 @@
+% -----------------------------------
+% CONFIGURACIONES PERSONALIZADAS
+% -----------------------------------
+
+% Hoja A4 y márgenes
+\usepackage[a4paper, margin=2.5cm]{geometry}
+
+% Paquetes gráficos y visuales
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{tikz,pgfplots}
+\usepackage{xcolor}
+
+% Codificación y tipografía
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% --- Tipo de letra ---
+% \renewcommand{\familydefault}{\sfdefault} % Arial/Helvetica
+% Tipo de letra serif (como Times New Roman)
+\usepackage{newtxtext}  % Times
+% Si quieres forzar helvetica más directamente:
+% \usepackage{helvet}
+% \renewcommand{\familydefault}{\sfdefault}
+
+% Código fuente
+\usepackage{listings}
+\lstset{
+  language=C++,
+  basicstyle=\ttfamily\small,
+  keywordstyle=\color{blue},
+  stringstyle=\color{red},
+  commentstyle=\color{green!50!black},
+  morekeywords={lambda},
+  breaklines=true,
+  showstringspaces=false,
+  numbers=left,
+  numberstyle=\tiny\color{gray},
+  frame=single,
+  captionpos=b
+}
+
+
+% Bibliografía con biblatex
+\usepackage[backend=bibtex, style=numeric]{biblatex}
+\addbibresource{bib/referencias.bib}
+
+% Hipervínculos clickeables
+\usepackage[
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=black,
+  urlcolor=blue
+]{hyperref}
+
+% Estilos para títulos
+\usepackage{titlesec}
+\titleformat{\section}
+  {\color{cyan!45!black}\normalfont\Large\bfseries}{\thesection.}{1em}{}
+
+\titleformat{\subsection}
+  {\color{black}\normalfont\large\bfseries}{\thesubsection.}{1em}{}
+  
+% Índice personalizado (si usas tabla de contenido)
+\usepackage{tocloft}
+\renewcommand{\cftsecaftersnum}{.}
+\renewcommand{\cftsubsecaftersnum}{.}
+
+% Secciones con numeración romana
+\renewcommand{\thesection}{\Roman{section}}
+\renewcommand{\thesubsection}{\thesection.\Alph{subsection}}
