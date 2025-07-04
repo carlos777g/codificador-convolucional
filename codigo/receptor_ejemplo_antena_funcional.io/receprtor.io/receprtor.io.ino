@@ -1,7 +1,7 @@
 // RECEPTOR RF24 - Decodificador Viterbi (n=2, k=1, K=4)
 // g1 = 1111 (binario) = 15 (decimal)
 // g2 = 1011 (binario) = 11 (decimal)
-
+// YA BIEN
 #include <SPI.h>
 #include <RF24.h>
 
